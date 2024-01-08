@@ -1,7 +1,7 @@
 {
   "name": "e-commercestore",
   "version": "0.1.0",
-  "homepage": "/home",
+  "homepage": "https://shubham00712.github.io/EcommerceStore/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

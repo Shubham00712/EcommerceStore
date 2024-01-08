@@ -11,9 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/EcommerceStore'>
         <Routes>
-          <Route path='/home' element={<App></App>}></Route>
+          <Route exact path='/' element={<App></App>}></Route>
           <Route path='/item' element={<Item></Item>}></Route>
         </Routes>
       </BrowserRouter>
