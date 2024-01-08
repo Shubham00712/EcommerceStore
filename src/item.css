@@ -1,0 +1,171 @@
+    .single-item-main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .single-item-img{
+        border: 1px solid black;
+        border-radius: 2%;
+        padding: 10px;
+        box-shadow: 1px 1px 5px black;
+    }
+
+    .single-item-img img{
+        max-height: 80vh;
+        width: 30vw;
+    }
+
+    .single-item-details{
+        width: 45vw;
+    }
+
+    .single-item-title{
+        font-size: 2vw;
+        font-weight: bold;
+        color: purple;
+        font-family: cursive;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    .single-item-descript{
+        font-size: 1.5vw;
+        font-style: oblique;
+        font-family: monospace;
+    }
+
+    .qty-main{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        width: 15vw;
+    }
+
+    .qty-main button{
+        width: 4vw;
+        height:fit-content;
+        font-size: 2vw;
+        border-radius: 2%;
+    }
+
+    .item-qty{
+        font-size: 2.2vw;
+        padding: 0% 4%;
+        border: none;
+        width: 6vw;
+        text-align: center;
+    }
+
+    .single-item-price{
+        font-size: 2vw;
+        color: brown;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .max-qty{
+        font-size: 1.3vw;
+        font-style: italic;
+        color: gray;
+    }
+
+    .additem-btn{
+        width: 25vw;
+        font-size: 2vw;
+        padding: 1vh 1vw;
+        background-color: rgba(0, 128, 0, 0.8);
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 2%;
+    }
+
+    button:disabled{
+        opacity: 0.6;
+    }
+
+    .additem-btn:hover{
+        box-shadow: 1px 1px 10px gray;
+    }
+
+    .remove-btn{
+        width: 25vw;
+        font-size: 2vw;
+        padding: 1vh 1vw;
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 2%;
+    }
+
+    .remove-btn:hover{
+        box-shadow: 1px 1px 10px rgb(255, 0, 0);
+    }
+
+    .back-item{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2vw;
+        font-family: cursive;
+        margin: 1vh 2vw;
+        padding: 4px;
+    }
+
+    .back-item:hover{
+        background-color: rgba(128, 128, 128, 0.459);
+        border-radius: 5%;
+        cursor: pointer;
+    }
+
+    .back-item img{
+        width: 2vw;
+        margin-right: 2%;
+    }
+
+    @media screen and (max-width:700px) {
+        .single-item-main{
+            flex-direction: column;
+            justify-content:initial;
+        }
+        .single-item-img{
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .single-item-img img{
+            height: 50vh;
+            width: fit-content;
+        }
+        .single-item-details{
+            padding-top: 2%;
+            width: 90vw;
+        }
+        .single-item-title{
+            font-size: 4vw;
+        }
+        .single-item-descript{
+            font-size: 2.8vw;
+        }
+        .single-item-price{
+            font-size: 3.5vw;
+        }
+        .atc{
+            text-align: center;
+        }
+        .atc button{
+            width: 40vw;
+            font-size: 3vw;
+        }
+        .max-qty{
+            font-size: 1.5vw;
+        }
+    }
